@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que este documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+  <!-- html envolve todo o conteudo da pagina.
+    lang="pt-BR" informa que o idioma principal e portugues do Brasil. -->
+
+  <head>
+      <!--head contem configuracoes e informacoes da pagina
+      que normalmente nao aparecem diretamente no visual. -->
+
+      <meta charset="UTF-8">
+          <!-- Define a codificacao UTF-8, permitindo usar corretamente
+          caracteres especiais e outros smbolos. -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Faz a pagina se adaptar melhor a telas de celulares e tablets. -->
+
+      <meta name="description" content="Landing page do campeonato fictício de Dota 2 Pixel Arena 2026.">
+          <!-- Descreve resumidamente o conteudo da pagina para mecanismos de busca. -->
+
+      <title>Pixel Arena 2026 | Campeonato de Dota 2</title>
+          <!-- Texto exibido na aba do navegador. -->
+
+      <link rel="stylesheet" href="css/style.css">
+          <!-- Conecta este arquivo HTML ao arquivo CSS localizado em css/style.css-->
+  </head>
+
+  <body>
+    <!-- body contem todo o conteudo que aparece visualmente no navegador. -->
+
+    <header>
+      <!-- Cabecalho principal da pagina.
+      Normalmente logo, titulo e menu de navegacao. -->
+
+      <div>
+        <!-- div um conteiner usado para agrupar elementos. -->
+
+        <h1>Pixel Arena 2026</h1>
+          <!-- h1 titulo principal da pagina.
+          Deve existir apenas um h1 como titulo mais importante do site. -->
+
+        <p>Campeonato de Dota 2</p>
+          <!-- p representa um paragrafo de texto. -->
+      </div>
+
+      <nav>
+        <!-- nav representa uma area de navegacao com links
+        para outras partes da pagina ou outras abas. -->
+
+        <a href="#inicio">Início</a>
+          <!-- a cria um link.
+          href="#inicio" aponta para o elemento que tera id="inicio". -->
+
+        <a href="#sobre">Sobre</a>
+          <!-- Link para a secao que explicara o campeonato. -->
+
+        <a href="#programacao">Programação</a>
+          <!-- Link para a seaoo com os horarios -->
+
+        <a href="#arena">Arena</a>
+          <!-- Link interno que leva a section que possui id="arena". -->
+
+        <a href="inscricao.html">Inscrição</a>
+          <!-- href="inscricao.html" abre o arquivo inscricao.html, que esta na
+          mesma pasta do arquivo index.html que tera o formulario -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- main representa o principal da pagina.-->
+      <section id="inicio">
+        <!-- section agrupa conteudos que pertencem ao mesmo assunto.
+         id="inicio" o link do menu leve o usuario ate essa area.  -->
+
+        <h2>Escolha seu herói. Defenda seu Ancient. Conquiste a arena.</h2>
+          <!-- h2 titulo de secao, depois do nivel do h1. -->
+
+        <p>
+        Prepare sua equipe para participar do <strong>Pixel Arena 2026</strong>,
+        um campeonato fictício de Dota 2 criado para reunir estratégia,
+        competição e paixão pelos eSports.
+        </p>
+            <!-- strong indica que uma parte do texto tem maior importancia.
+            o navegador exibe esse texto em negrito. -->
+        <p>
+        Criado por uma comunidade fictícia de jogadores, o Pixel Arena 2026 nasceu
+        com a missão de transformar partidas online em uma experiência presencial
+        de competição, amizade e aprendizado. O campeonato reúne equipes que desejam
+        testar suas estratégias, desenvolver comunicação durante as partidas e mostrar
+        sua evolução dentro do universo de Dota 2.
+        </p>
+            <!-- p cria um novo paragrafo para apresentar a origem do campeonato. -->
+
+        <p>
+        Mais do que uma disputa pela vitória, a arena foi pensada como um espaço para
+        celebrar os <strong>eSports</strong>, conhecer novos jogadores e valorizar o
+        trabalho em equipe. Cada partida será uma oportunidade para defender o Ancient,
+        superar desafios e conquistar seu lugar entre as melhores equipes da competição.
+        </p>
+
+        <a href="inscricao.html" class="botao-inscricao">Inscreva sua equipe</a>
+            <!-- class="botao-inscricao" permite aplicar um estilo exclusivo a este link
+            no CSS. leva o usuario diretamente ao formulario-->
+      </section>
+
+      <section id="sobre"> 
+        <h2>Sobre o campeonato</h2>
+        <p>
+        O <strong>Pixel Arena 2026</strong> é um campeonato fictício de
+        <span>Dota 2</span> criado para jogadores que gostam de estratégia,
+        trabalho em equipe e competição.
+        </p>
+          <!-- span uma tag usada para destacar uma pequena parte do texto.
+          podemos aplicar um estilo especifico nela com CSS. -->
+
+        <p>
+        Reúna cinco amigos, forme uma equipe e prepare-se para disputar partidas
+        no formato <em>cinco contra cinco</em>.
+        </p>
+          <!-- em da destaque a um trecho do texto.
+          o navegador exibe em italico. -->
+
+        <figure>
+          <!-- figure agrupa um conteudo visual,
+          como uma imagem, junto de sua legenda. -->
+          <img
+            src="imagens/arena-gamer.jpg"
+            alt="Jogador utilizando computador em um ambiente de competição gamer"
+          >
+            <!-- img exibe uma imagem.
+            src indica o endereco da imagem.
+            alt descreve a imagem para acessibilidade e aparece caso ela nao carregue-->
+
+          <figcaption>
+            Arena competitiva preparada para receber equipes e fãs de eSports.
+          </figcaption>
+            <!-- figcaption cria uma legenda relacionada ao conteúdo da figure. -->
+        </figure>
+
+        <article>
+          <!-- article representa um conteudo independente dentro da pagina.
+          Aqui ele sera usado para apresentar um destaque do torneio. -->
+
+          <h3>Competição em equipe</h3>
+            <!-- h3 um titulo abaixo do h2. -->
+
+          <p>
+          Cada equipe deve possuir <strong>cinco jogadores</strong> e um capitão.
+          O capitão será responsável por realizar a inscrição e manter contato com
+          a organização do evento.
+          </p>
+        </article>
+
+        <article>
+          <!-- Outro article com uma informaaoo independente sobre o campeonato. -->
+
+          <h3>Premiação fictícia</h3>
+          <p>
+          As melhores equipes disputarão uma premiação simbólica de
+          <span>R$ 5.000</span>, além de troféus e reconhecimento na comunidade.
+          </p>
+        </article>
+
+        <h3>Etapas do campeonato</h3>
+
+        <ol>
+          <!-- ol cria uma lista ordenada.
+          O navegador numera automaticamente cada item da lista. -->
+          <li>Inscrição das equipes e confirmação dos participantes.</li>
+            <!-- li representa um item dentro da lista. -->
+          <li>Fase de grupos com partidas classificatórias.</li>
+          <li>Eliminatórias entre as equipes classificadas.</li>
+          <li>Grande final presencial com transmissão online.</li>
+        </ol>
+
+        <h3>Glossário do torneio</h3>
+
+        <dl>
+          <!-- dl cria uma lista de definicao. -->
+          <dt>Ancient</dt>
+            <!-- dt representa o termo que sera explicado. -->
+            <dd>
+              Estrutura principal que cada equipe deve proteger durante uma partida de Dota 2.
+            </dd>
+              <!-- dd representa a descricao do termo anterior. -->
+
+          <dt>Carry</dt>
+            <dd>
+              Jogador que normalmente se fortalece durante a partida e causa grande impacto no final do jogo.
+            </dd>
+
+          <dt>Suporte</dt>
+            <dd>
+              Jogador responsável por auxiliar a equipe com visão, itens de suporte e proteção aos aliados.
+            </dd>
+          <dt>Hero</dt>
+            <dd>
+              Personagem controlado individualmente por cada jogador durante a partida.
+              Cada hero possui habilidades próprias e pode assumir funções diferentes na equipe.
+            </dd>
+          <dt>Lane</dt>
+            <dd>
+              Uma das três rotas principais do mapa: top, mid ou bot. As equipes utilizam
+              essas rotas para avançar, destruir torres e se aproximar do Ancient inimigo.
+            </dd>
+          <dt>Creep</dt>
+            <dd>
+              Unidade controlada pelo jogo que avança automaticamente pelas lanes. Derrotar
+              creeps ajuda os jogadores a obter ouro e experiência durante a partida.
+            </dd>
+          <dt>Farm</dt>
+            <dd>
+              Ação de acumular ouro e experiência ao derrotar creeps, heróis inimigos e,
+              em algumas situações, estruturas adversárias.
+            </dd>
+          <dt>Last hit</dt>
+            <dd>
+              Golpe final dado em um creep inimigo. É importante porque normalmente garante
+              ouro ao jogador que aplicou o último ataque.
+            </dd>
+          <dt>Gank</dt>
+            <dd>
+              Ataque surpresa realizado por um ou mais jogadores para eliminar um adversário,
+              geralmente em uma lane onde ele está mais vulnerável.
+            </dd>
+          <dt>Roshan</dt>
+            <dd>
+              Criatura neutra poderosa que pode ser derrotada pelas equipes. Ao vencer Roshan,
+              a equipe recebe ouro, experiência e itens especiais, como a Aegis of the Immortal.
+            </dd>
+          <dt>Aegis of the Immortal</dt>
+            <dd>
+              Item obtido principalmente ao derrotar Roshan. Ele permite que o portador retorne
+              à partida uma vez após ser eliminado, criando uma vantagem importante em lutas decisivas.
+            </dd>
+          <dt>Ward</dt>
+            <dd>
+              Item usado para oferecer visão em uma área do mapa. Wards ajudam a equipe a
+              identificar movimentações inimigas e tomar decisões com mais segurança.
+            </dd>
+          <dt>Team fight</dt>
+            <dd>
+              Grande luta envolvendo vários jogadores das duas equipes. Uma team fight vencida
+              pode permitir conquistar objetivos como torres, Roshan ou o Ancient inimigo.
+            </dd>
+        </dl>
+
+        <p>
+          O Pixel<wbr>Arena 2026 contará com transmissão online, narração ao vivo e cobertura das partidas para a comunidade de Dota 2.
+        </p>
+          <!-- wbr significa "word break opportunity".
+          Ela indica um ponto opcional para o navegador quebrar uma palavra longa
+          caso seja necessario em telas menores.
+          Aqui, ela foi usada entre "Pixel" e "Arena"-->
+      </section>
+
+      <section id="programacao">
+        <!-- section cria uma nova area
+        id="programacao" permite que o link "Programacao" do menu
+        leve o visitante ate esta parte do site. -->
+
+        <hr>
+          <!-- hr cria uma linha horizontal.
+          Ela serve para separar visualmente conteudos de assuntos diferentes. -->
+
+        <h2>Programação do campeonato</h2>
+        <p>
+        Confira os horários previstos para o <strong>Pixel Arena 2026</strong>.
+        A programação foi criada apenas para este projeto acadêmico.
+        </p>
+
+        <table>
+          <!-- table cria uma tabela usada para organizar dados em linhas e colunas. -->
+          <tr>
+            <!-- tr significa "table row" e representa uma linha da tabela. -->
+            <th>Data</th>
+              <!-- td significa "table data" e representa uma celula de dados da tabela. -->
+            <th>Horário</th>
+            <th>Atividade</th>
+          </tr>
+          <tr>
+            <td>18 de julho de 2026</td>
+            <td>09:00 Hrs</td>
+            <td>Credenciamento das equipes</td>
+          </tr>
+          <tr>
+            <td>18 de julho de 2026</td>
+            <td>10:00 Hrs</td>
+            <td>Início da fase de grupos</td>
+          </tr>
+          <tr>
+            <td>18 de julho de 2026</td>
+            <td>16:00 Hrs</td>
+            <td>Partidas classificatórias</td>
+          </tr>
+          <tr>
+            <td>19 de julho de 2026</td>
+            <td>10:00 Hrs</td>
+            <td>Semifinais</td>
+          </tr>
+          <tr>
+            <td>19 de julho de 2026</td>
+            <td>16:00 Hrs</td>
+            <td>Grande final e premiação</td>
+          </tr>
+        </table>
+        <!-- Observacao:
+        O enunciado exige table, tr e td, a primeira linha usa th.
+        Em um projeto mais completo, os titulos da tabela
+        utilizam a tag th, que significa "table header". -->
+      </section>
+    
+      <section id="arena">
+        <!-- section agrupa o conteudo relacionado ao local, video, audio e transmissao.
+        id="arena" usado por um link do menu. -->
+
+        <hr>
+          <!-- Linha horizontal usada para separar esta aea da secao anterior. -->
+        <h2>Arena e transmissão</h2>
+        <p>
+        O <strong>Pixel Arena 2026</strong> será realizado em Curitiba e contará
+        com partidas presenciais, transmissão online e conteúdos especiais para o público.
+        </p>
+
+        <article>
+          <!-- article representa um bloco de conteudo que faz sentido por conta propria. -->
+          <h3>Vídeo de apresentação</h3>
+
+          <video controls>
+            <!-- video adiciona um reprodutor de video
+            controls exibe botoes como reproduzir, pausar, volume e tela cheia. -->
+
+            <source src="videos/apresentacao-pixel-arena.mp4" type="video/mp4">
+              <!-- source informa o arquivo do video e o tipo do arquivo.
+              O navegador tenta carregar este arquivo dentro da pasta videos. -->
+          </video>
+
+          <p>
+          Vídeo demonstrativo da experiência competitiva que os participantes
+          encontrarão durante o campeonato.
+          </p>
+        </article>
+
+        <article>
+          <h3>Chamada sonora do torneio</h3>
+
+          <audio controls>
+            <!-- audio adiciona um reprodutor de audio.
+            controls mostra botoes para reproduzir, pausar e controlar o volume. -->
+
+            <source src="audios/chamada-pixel-arena.mp3" type="audio/mpeg">
+              <!-- source aponta para o arquivo de audio dentro da pasta audios.
+              type="audio/mpeg" informa que o arquivo esto no formato MP3. -->
+          </audio>
+
+          <p>
+          Ouça a chamada oficial fictícia do Pixel Arena 2026.
+          </p>
+        </article>
+
+        <article>
+          <h3>Localização da arena</h3>
+
+          <iframe
+            src="https://www.google.com/maps?q=Curitiba%20Paran%C3%A1&output=embed"
+            title="Mapa com a localização de Curitiba, Paraná"
+            width="600"
+            height="450"
+            loading="lazy">
+          </iframe>
+            <!-- iframe incorpora um conteudo externo dentro da pagina.
+            Neste caso, ele exibe um mapa do Google Maps com Curitiba, Paraná.
+            src e o endereco do conteudo incorporado.
+            title descreve o iframe para acessibilidade.
+            width e height definem largura e altura iniciais.
+            loading="lazy" faz o mapa carregar apenas quando estiver proximo da tela,
+            ajudando no desempenho do site. -->
+
+          <p>
+          Local fictício: Arena Pixel, Curitiba — Paraná.
+          </p>
+        </article>
+
+        <aside>
+          <!-- aside representa um conteudo complementar ao assunto principal. -->
+
+          <h3>Aviso aos competidores</h3>
+
+          <p>
+          Cada equipe deve chegar ao local com antecedência para realizar o check-in
+          e confirmar a presença dos cinco jogadores.
+          </p>
+
+          <small>
+          Evento fictício desenvolvido exclusivamente para fins acadêmicos.
+          Dota 2 é uma marca pertencente aos seus respectivos proprietários.
+          </small>
+            <!-- small representa um texto secundario, como observacoes, avisos ou informacoes. -->
+        </aside>
+      </section>
+    </main>
+
+  <footer>
+    <!-- footer representa o rodapé da página. -->
+
+    <p>Projeto acadêmico fictício — Pixel Arena 2026.</p>
+    <!-- Parágrafo com informação de rodapé. -->
+  </footer>
+
+    </body>
+</html>

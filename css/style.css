@@ -1,0 +1,557 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+/* O seletor * seleciona todos os elementos da página.
+   box-sizing: border-box faz padding e borda entrarem no cálculo
+   da largura e altura, facilitando a organização do layout. */
+* {
+  box-sizing: border-box;
+}
+
+/* body representa todo o conteúdo visível da página.
+   Aqui definimos fonte, cor do texto, fundo escuro e removemos
+   a margem padrão aplicada pelo navegador. */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #101014;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Faz a rolagem da página ficar suave quando o visitante
+   clica em links internos do menu, como href="#sobre". */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================================
+   CABEÇALHO E MENU
+   ========================================================= */
+
+/* header representa o cabeçalho principal das páginas.
+   padding cria espaço interno.
+   background-color define o fundo.
+   border-bottom adiciona uma linha na parte inferior. */
+header {
+  padding: 24px 8%;
+  background-color: #1a1a22;
+  border-bottom: 3px solid #c62828;
+}
+
+/* h1 é o título principal.
+   margin: 0 remove espaçamentos padrão.
+   color define o dourado do título. */
+header h1 {
+  margin: 0;
+  color: #f5b942;
+  font-size: 2.2rem;
+}
+
+/* Seleciona o parágrafo que está dentro do header.
+   margin-top cria um espaço acima do subtítulo. */
+header p {
+  margin-top: 4px;
+  color: #d6d6d6;
+}
+
+/* nav é a área onde ficam os links do menu.
+   display: flex organiza os links lado a lado.
+   gap cria um espaço entre cada link.
+   flex-wrap permite quebrar o menu em mais de uma linha em telas pequenas. */
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* nav a seleciona somente os links que estão dentro da navegação.
+   text-decoration: none remove o sublinhado padrão.
+   transition deixa a mudança de cor mais suave ao passar o mouse. */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* :hover é aplicado quando o mouse passa sobre o link. */
+nav a:hover {
+  color: #f5b942;
+}
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL E SEÇÕES
+   ========================================================= */
+
+/* main representa a área principal do conteúdo.
+   max-width limita a largura para evitar linhas muito longas.
+   margin: auto centraliza o conteúdo horizontalmente.
+   padding cria espaço nas laterais e na parte superior/inferior. */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* section representa cada bloco temático da página.
+   background-color dá destaque à seção.
+   margin-bottom separa uma seção da outra.
+   padding cria espaço interno.
+   border-radius arredonda os cantos. */
+section {
+  background-color: #1a1a22;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* h2 são os títulos principais das seções. */
+h2 {
+  margin-top: 0;
+  color: #f5b942;
+  border-left: 5px solid #c62828;
+  padding-left: 12px;
+}
+
+/* h3 são subtítulos dentro das seções. */
+h3 {
+  color: #ff7676;
+}
+
+/* span destaca palavras ou pequenos trechos de texto.
+   No HTML, ele é usado para Dota 2 e para o valor da premiação. */
+span {
+  color: #f5b942;
+  font-weight: bold;
+}
+
+/* strong indica um conteúdo importante.
+   Definimos uma cor clara para aumentar o destaque. */
+strong {
+  color: #ffffff;
+}
+
+/* em representa texto com ênfase.
+   A cor diferencia o texto enfatizado do restante do parágrafo. */
+em {
+  color: #ffb3b3;
+}
+
+/* article representa conteúdo independente dentro da seção.
+   border-left cria uma linha decorativa na esquerda. */
+article {
+  margin: 20px 0;
+  padding: 18px;
+  background-color: #24242e;
+  border-left: 4px solid #c62828;
+  border-radius: 6px;
+}
+
+/* aside é um conteúdo complementar, como o aviso aos competidores. */
+aside {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #332626;
+  border: 1px solid #c62828;
+  border-radius: 6px;
+}
+
+/* hr cria a linha horizontal entre conteúdos.
+   border: none remove a borda padrão.
+   border-top cria somente uma linha no topo. */
+hr {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 35px 0;
+}
+
+/* small é usado para observações e informações secundárias. */
+small {
+  color: #bdbdbd;
+}
+
+/* =========================================================
+   IMAGENS, VÍDEOS, ÁUDIO E MAPA
+   ========================================================= */
+
+/* figure agrupa imagem e legenda.
+   margin: 24px 0 remove as margens padrão laterais do navegador. */
+figure {
+  margin: 24px 0;
+}
+
+/* img seleciona todas as imagens.
+   max-width: 100% impede que a imagem fique maior que o contêiner.
+   display: block remove pequenos espaços indesejados abaixo da imagem.
+   border-radius arredonda os cantos. */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* figcaption estiliza a legenda da imagem. */
+figcaption {
+  margin-top: 8px;
+  color: #bdbdbd;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* video, audio e iframe são elementos de mídia.
+   max-width impede que ultrapassem a largura do conteúdo.
+   margin-top cria espaço acima. */
+video,
+audio,
+iframe {
+  max-width: 100%;
+  margin-top: 12px;
+}
+
+/* video e iframe recebem largura total para ocupar o espaço disponível. */
+video,
+iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Define uma altura mínima para o vídeo, mesmo se o arquivo
+   ainda não estiver na pasta videos. */
+video {
+  min-height: 260px;
+  background-color: #000000;
+}
+
+/* =========================================================
+   LISTAS E TABELA
+   ========================================================= */
+
+/* ol cria uma lista ordenada.
+   padding-left cria espaço para a numeração dos itens. */
+ol {
+  padding-left: 24px;
+}
+
+/* li representa cada item das listas. */
+li {
+  margin-bottom: 8px;
+}
+
+/* dl é uma lista de definições. */
+dl {
+  background-color: #24242e;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* dt representa o termo da definição. */
+dt {
+  margin-top: 12px;
+  color: #f5b942;
+  font-weight: bold;
+}
+
+/* dd representa a explicação do termo. */
+dd {
+  margin-left: 20px;
+  color: #d6d6d6;
+}
+
+/* table cria a tabela da programação.
+   width: 100% faz a tabela ocupar todo o espaço disponível.
+   border-collapse junta as bordas das células. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* tr:nth-child(1) seleciona a primeira linha da tabela,
+   usada como cabeçalho no nosso HTML. */
+tr:nth-child(1) {
+  background-color: #c62828;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* td representa cada célula da tabela. */
+td {
+  padding: 14px;
+  border: 1px solid #555;
+}
+
+/* tr:nth-child(even) seleciona linhas pares.
+   Isso melhora a leitura alternando levemente a cor de fundo. */
+tr:nth-child(even) {
+  background-color: #24242e;
+}
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+/* form representa todo o formulário de inscrição. */
+form {
+  margin-top: 25px;
+}
+
+/* fieldset agrupa campos relacionados. */
+fieldset {
+  margin-bottom: 24px;
+  padding: 22px;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+/* legend é o título do fieldset. */
+legend {
+  padding: 0 8px;
+  color: #f5b942;
+  font-weight: bold;
+}
+
+/* label descreve cada campo do formulário.
+   display: block faz o label ocupar sua própria linha.
+   margin-top separa os campos. */
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Estiliza campos de texto, listas e textarea.
+   A lista inclui os tipos de input usados no formulário. */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="search"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  color: #ffffff;
+  background-color: #101014;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Define uma altura mínima para textarea, campo de texto com várias linhas. */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Estiliza quando o usuário clica ou navega até um campo. */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f5b942;
+  box-shadow: 0 0 0 2px rgba(245, 185, 66, 0.2);
+}
+
+/* =========================================================
+   CAMPO DE COR DA EQUIPE
+   ========================================================= */
+
+/* input type="color" cria o seletor de cor.
+   Aumentamos seu tamanho para que a cor escolhida apareça
+   de forma visível mesmo antes de o usuário clicar no campo. */
+input[type="color"] {
+  width: 100%;
+  height: 48px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: #101014;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+/* Estiliza a área interna onde o navegador exibe a amostra de cor.
+   Este seletor funciona principalmente no Chrome e no Edge. */
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+/* Aumenta e arredonda a amostra da cor selecionada.
+   A borda clara ajuda a enxergar a cor sobre o fundo escuro. */
+input[type="color"]::-webkit-color-swatch {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+/* Firefox utiliza este seletor para a amostra de cor. */
+input[type="color"]::-moz-color-swatch {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+/* =========================================================
+   BARRA DE NÍVEL DE EXPERIÊNCIA
+   ========================================================= */
+
+/* range mantém largura automática, pois é uma barra deslizante
+   e não precisa ocupar toda a largura como campos de texto. */
+input[type="range"] {
+  width: auto;
+  cursor: pointer;
+}
+
+/* Os labels associados aos campos radio e checkbox não devem ficar em bloco,
+   porque precisam ficar ao lado das opções. */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  margin-left: 6px;
+  margin-right: 16px;
+  font-weight: normal;
+}
+
+/* button representa o botão de envio do formulário. */
+button {
+  padding: 14px 22px;
+  background-color: #c62828;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Muda o botão quando o mouse passa sobre ele. */
+button:hover {
+  background-color: #f5b942;
+  color: #101014;
+  transform: translateY(-2px);
+}
+
+/* botao-inscricao estiliza o link da página inicial para ele parecer um botão. */
+.botao-inscricao {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 14px 22px;
+  color: #ffffff;
+  background-color: #c62828;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+
+/* Altera a aparência do link ao passar o mouse. */
+.botao-inscricao:hover {
+  color: #101014;
+  background-color: #f5b942;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+/* footer representa a parte final das páginas. */
+footer {
+  padding: 24px 8%;
+  text-align: center;
+  background-color: #1a1a22;
+  border-top: 3px solid #c62828;
+}
+
+/* footer a seleciona os links localizados dentro do rodapé. */
+footer a {
+  color: #f5b942;
+}
+/* =========================================================
+   CORREÇÃO FORÇADA: ÍCONES BRANCOS DE DATA E HORA
+   ========================================================= */
+
+/* Mantém os textos dos controles de data/hora em branco
+   e avisa ao navegador que eles pertencem a um tema escuro. */
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime-local"] {
+  color: #ffffff !important;
+  color-scheme: dark !important;
+}
+
+/* No Chrome e no Edge, este pseudo-elemento representa o botão
+   nativo de calendário ou relógio no fim do campo.
+
+   invert(1) transforma o ícone preto em branco.
+   !important força esta regra acima de estilos nativos que possam
+   estar impedindo a alteração. */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+}
+
+/* Mantém o ícone branco quando o campo recebe foco pelo clique,
+   mouse ou navegação com a tecla Tab. */
+input[type="date"]:focus::-webkit-calendar-picker-indicator,
+input[type="month"]:focus::-webkit-calendar-picker-indicator,
+input[type="week"]:focus::-webkit-calendar-picker-indicator,
+input[type="time"]:focus::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]:focus::-webkit-calendar-picker-indicator,
+input[type="date"]:hover::-webkit-calendar-picker-indicator,
+input[type="month"]:hover::-webkit-calendar-picker-indicator,
+input[type="week"]:hover::-webkit-calendar-picker-indicator,
+input[type="time"]:hover::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]:hover::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+  opacity: 1 !important;
+}
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* Esta regra é aplicada somente em telas com largura máxima de 600 pixels,
+   como muitos celulares. */
+@media (max-width: 600px) {
+  /* Diminui a margem interna do cabeçalho em telas menores. */
+  header {
+    padding: 20px;
+  }
+
+  /* Diminui o tamanho do título principal para ele caber melhor na tela. */
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Faz cada seção ocupar menos espaço interno em celulares. */
+  section {
+    padding: 20px;
+  }
+
+  /* Diminui o espaço interno de cada célula da tabela. */
+  td {
+    padding: 10px;
+  }
+}

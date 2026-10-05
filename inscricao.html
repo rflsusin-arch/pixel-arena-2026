@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Formulário de inscrição para o campeonato fictício de Dota 2 Pixel Arena 2026."
+    >
+      <!-- Descricao resumida da pagina para mecanismos de busca. -->
+
+    <title>Inscrição | Pixel Arena 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <!-- div agrupa o titulo e o subtitulo. -->
+        <h1>Pixel Arena 2026</h1>
+        <p>Formulário de inscrição para o Campeonato de Dota 2</p>
+      </div>
+      <nav>
+        <a href="index.html">Voltar para a página inicial</a>
+        <!-- Link que retorna para o arquivo index.html. -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="inscricao">
+          <!-- section agrupa o conteudo do formulario.
+          id="inscricao" identifica esta parte da pagina. -->
+
+          <h2>Inscreva sua equipe</h2>
+
+          <p>
+          Preencha os campos abaixo para realizar uma inscrição fictícia no
+          <strong>Pixel Arena 2026</strong>.
+          </p>
+
+          <form action="#" method="post">
+          <!-- form cria o formulario.
+          action="#" indica que, por enquanto, os dados nao serao enviados
+          para um servidor real.
+          method="post" define o metodo de envio dos dados. -->
+
+          <fieldset>
+            <!-- fieldset agrupa campos relacionados. -->
+
+            <legend>Dados do capitão da equipe</legend>
+              <!-- legend cria o titulo do grupo de campos. -->
+
+            <label for="nome-capitao">Nome completo do capitão:</label>
+              <!-- label descreve o campo.
+              for="nome-capitao" associa este texto ao input com id igual a nome-capitao. -->
+
+            <input
+              type="text"
+              id="nome-capitao"
+              name="nome-capitao"
+              placeholder="Digite seu nome completo"
+              required
+            >
+              <!-- input type="text" cria um campo de texto de uma linha.
+              id identifica o elemento.
+              name o nome do dado que seria enviado ao servidor.
+              placeholder mostra uma dica dentro do campo.
+              required torna o preenchimento obrigatorio. -->
+
+            <br>
+              <!-- br cria uma quebra de linha.-->
+            <label for="email-capitao">E-mail:</label>
+
+            <input
+              type="email"
+              id="email-capitao"
+              name="email-capitao"
+              placeholder="exemplo@email.com"
+              required
+            >
+              <!-- input type="email" usado para endereco de e-mail.
+              O navegador verifica se o formato basico de e-mail e valido antes de enviar. -->
+            <br>
+            <label for="idade-capitao">Idade:</label>
+
+            <input
+              type="number"
+              id="idade-capitao"
+              name="idade-capitao"
+              min="14"
+              max="99"
+              placeholder="Exemplo: 20"
+              required
+            >
+              <!-- input type="number" permite informar valores.
+              min define o menor valor aceito.
+              max define o maior valor aceito. -->
+            <br>
+            <label for="telefone-capitao">WhatsApp:</label>
+
+            <input
+              type="tel"
+              id="telefone-capitao"
+              name="telefone-capitao"
+              placeholder="(41) 99999-9999"
+              required
+            >
+              <!-- input type="tel" numeros de telefone.
+              Em celulares, geralmente abre um teclado numerico. -->
+            <br>
+            <label for="steam-url">Perfil Steam:</label>
+
+            <input
+              type="url"
+              id="steam-url"
+              name="steam-url"
+              placeholder="https://steamcommunity.com/id/seu-perfil"
+            >
+              <!-- input type="url" usado para enderecos de paginas da internet.
+              O navegador espera uma URL valida, normalmente comecando com https://. -->
+            <br>
+            <label for="senha">Crie uma senha fictícia:</label>
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Digite uma senha"
+              required
+            >
+              <!-- input type="password" oculta visualmente os caracteres digitados.
+              existe apenas para demonstrar o tipo de input solicitado. -->
+            <br>
+            <label for="nascimento">Data de nascimento:</label>
+
+            <input
+              type="date"
+              id="nascimento"
+              name="nascimento"
+              required
+            >
+              <!-- input type="date" cria um campo para selecionar uma data. -->
+            <br>
+            <label for="inicio-dota">Mês em que começou a jogar Dota 2:</label>
+
+            <input
+              type="month"
+              id="inicio-dota"
+              name="inicio-dota"
+            >
+              <!-- input type="month" permite selecionar apenas mes e ano. -->
+            <br>
+            <label for="semana-disponivel">Semana disponível para classificatórias:</label>
+
+            <input
+              type="week"
+              id="semana-disponivel"
+              name="semana-disponivel"
+            >
+              <!-- input type="week" permite selecionar uma semana especifica do ano. -->
+            <br>
+            <label for="horario-preferido">Horário preferido para partidas:</label>
+
+            <input
+              type="time"
+              id="horario-preferido"
+              name="horario-preferido"
+            >
+              <!-- input type="time" permite selecionar um horario. -->
+
+            <br>
+            <label for="checkin">Data e horário disponíveis para check-in:</label>
+
+            <input
+              type="datetime-local"
+              id="checkin"
+              name="checkin"
+            >
+              <!-- input type="datetime-local" permite selecionar data e hora-->
+          </fieldset>
+
+          <fieldset>
+            <!-- Segundo grupo de campos: dados relacionados a equipe. -->
+            <legend>Dados da equipe</legend>
+
+            <label for="nome-equipe">Nome da equipe:</label>
+
+            <input
+              type="text"
+              id="nome-equipe"
+              name="nome-equipe"
+              placeholder="Exemplo: Ancient Defenders"
+              required
+            >
+              <!-- Outro input text, agora utilizado para receber o nome da equipe. -->
+            <br>
+            <label for="logo-equipe">Envie a logo da equipe:</label>
+
+            <input
+              type="file"
+              id="logo-equipe"
+              name="logo-equipe"
+              accept=".jpg,.jpeg,.png"
+            >
+              <!-- input type="file" permite selecionar um arquivo do computador.
+              accept limita visualmente os formatos sugeridos para imagem. -->
+            <br>
+            <label for="cor-equipe">Cor principal da equipe:</label>
+
+            <input
+              type="color"
+              id="cor-equipe"
+              name="cor-equipe"
+              value="#c62828"
+            >
+              <!-- input type="color" abre um seletor de cores.
+              value define a cor inicial apresentada pelo campo. -->
+            <br>
+            <label for="hero-search">Pesquise seu herói principal:</label>
+
+            <input
+              type="search"
+              id="hero-search"
+              name="hero-search"
+              list="lista-herois"
+              placeholder="Exemplo: Juggernaut"
+            >
+              <!-- input type="search" indicado para campos de pesquisa.
+              list conecta este input ao datalist de sugestoes chamado lista-herois. -->
+
+            <datalist id="lista-herois">
+              <!-- datalist cria uma lista de sugestoes para o campo associado. -->
+              <option value="Axe">
+                <!-- option representa uma sugestao no datalist. -->
+              <option value="Crystal Maiden">
+              <option value="Juggernaut">
+              <option value="Pudge">
+              <option value="Phantom Assassin">
+              <option value="Invoker">
+            </datalist>
+
+            <br>
+            <label for="funcao">Função principal no time:</label>
+            
+            <select id="funcao" name="funcao" required>
+              <!-- select cria uma lista suspensa de opcoes. -->
+              <option value="">Selecione uma função</option>
+                <!-- option cria uma escolha dentro do select.
+                value="" faz esta opcao representar que ainda noo teve escolha. -->
+
+              <optgroup label="Funções de carry">
+                <!-- optgroup agrupa opcoes relacionadas dentro do select. -->
+                <option value="carry">Carry</option>
+                <option value="mid">Mid</option>
+                <option value="offlane">Offlane</option>
+              </optgroup>
+
+              <optgroup label="Funções de suporte">
+                <option value="support">Support</option>
+                <option value="hard-support">Hard Support</option>
+              </optgroup>
+            </select>
+
+            <br>
+            <label for="estrategia">Apresente brevemente sua equipe ou estratégia:</label>
+
+            <textarea
+              id="estrategia"
+              name="estrategia"
+              rows="5"
+              cols="40"
+              placeholder="Conte como sua equipe pretende participar do torneio..."
+            >
+            </textarea>
+              <!-- textarea cria uma area de texto.
+              rows define uma altura inicial em linhas.
+              cols define uma largura inicial aproximada em caracteres. -->
+          </fieldset>
+
+          <fieldset>
+            <!-- Terceiro grupo: preferencias e confirmacao. -->
+            <legend>Preferências de participação</legend>
+            <p>Modalidade de participação:</p>
+
+            <input
+              type="radio"
+              id="modalidade-presencial"
+              name="modalidade"
+              value="presencial"
+              required
+            >
+              <!-- input type="radio" permite escolher apenas uma opcao dentro de um grupo.
+              Os inputs radio possuem o mesmo name="modalidade",
+              por isso o usuario so podera marcar uma alternativa. -->
+
+            <label for="modalidade-presencial">Presencial em Curitiba</label>
+
+            <input
+              type="radio"
+              id="modalidade-online"
+              name="modalidade"
+              value="online"
+            >
+
+            <label for="modalidade-online">Online</label>
+            <br>
+            <label for="nivel-experiencia">
+              Nível de experiência no Dota 2:
+            </label>
+
+            <input
+              type="range"
+              id="nivel-experiencia"
+              name="nivel-experiencia"
+              min="1"
+              max="10"
+              value="5"
+            >
+              <!-- input type="range" cria uma barra deslizante.
+              min o valor minimo, max o maximo e value o valor inicial. -->
+
+            <br>
+
+            <input
+              type="checkbox"
+              id="regulamento"
+              name="regulamento"
+              value="aceito"
+              required
+            >
+            <!-- input type="checkbox" permite marcar ou desmarcar uma opcao.
+              required obriga o participante a aceitar o regulamento para enviar o formulario. -->
+
+            <label for="regulamento">
+              Li e aceito o regulamento fictício do campeonato.
+            </label>
+            <br>
+            <input
+              type="checkbox"
+              id="novidades"
+              name="novidades"
+              value="sim"
+            >
+
+            <label for="novidades">
+              Desejo receber novidades sobre futuros campeonatos.
+            </label>
+          </fieldset>
+
+          <button type="submit">Enviar inscrição</button>
+            <!-- button cria um botao clicavel.
+            type="submit" indica que ele envia o formulario quando clicado. -->
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Rodape da pagina de inscricao. -->
+      <p>
+        <a href="index.html">Voltar para a página inicial</a>
+      </p>
+
+      <small>
+        Projeto acadêmico fictício. Esta página não realiza uma inscrição real
+        nem armazena dados dos usuários.
+      </small>
+    </footer>
+  </body>
+</html>
